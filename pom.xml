@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>org.example</groupId>
+    <artifactId>OptionsTest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    
+    <!--    <properties>-->
+    <!--        <maven.compiler.source>8</maven.compiler.source>-->
+    <!--        <maven.compiler.target>8</maven.compiler.target>-->
+    <!--    </properties>-->
+    
+    
+    <properties>
+        <mysolomeo-common.version>0.1</mysolomeo-common.version>
+        <barchartNettyVersion>3.5.12.Final</barchartNettyVersion>
+        <activ-sdk.version>2.3.0.4</activ-sdk.version>
+        <slf4jApiVersion>1.7.6</slf4jApiVersion>
+        <app.version>0.22</app.version>
+        <junit.version>4.12</junit.version>
+        <mockito.version>2.8.9</mockito.version>
+        <powermock.version>1.7.3</powermock.version>
+    
+    </properties>
+    
+    <dependencies>
+        <!-- MySolomeo Common: Common code between all MySolomeo Java projects -->
+        <dependency>
+            <groupId>com.mysolomeo</groupId>
+            <artifactId>mysolomeo-common-lib</artifactId>
+            <version>${mysolomeo-common.version}</version>
+        </dependency>
+    
+        <!-- Apache Commons: Daemonize the app -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-daemon</artifactId>
+            <version>1.0.9</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito2</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+    
+        <!-- Barcharts Feed Library needs this -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+            <version>${barchartNettyVersion}</version>
+            <scope>provided</scope>
+        </dependency>
+    
+        <!-- Barcharts Feed Library needs this -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4jApiVersion}</version>
+        </dependency>
+    
+        <!-- Barcharts Feed Library needs this -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>com.ddfplus.jaws</groupId>
+            <artifactId>ddfplus-api</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>Activ</groupId>
+            <artifactId>activ-content-gateway-api-lib</artifactId>
+            <version>${activ-sdk.version}</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>Activ</groupId>
+            <artifactId>activ-content-server-api-lib</artifactId>
+            <version>${activ-sdk.version}</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>Activ</groupId>
+            <artifactId>activ-contribution-server-api-lib</artifactId>
+            <version>${activ-sdk.version}</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>Activ</groupId>
+            <artifactId>activ-middleware-lib</artifactId>
+            <version>${activ-sdk.version}</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>Activ</groupId>
+            <artifactId>activ-content-gateway-api-constants-lib</artifactId>
+            <version>${activ-sdk.version}</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>Activ</groupId>
+            <artifactId>activ-contribution-gateway-api-lib</artifactId>
+            <version>${activ-sdk.version}</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>Activ</groupId>
+            <artifactId>activ-sample-common-lib</artifactId>
+            <version>${activ-sdk.version}</version>
+        </dependency>
+    
+        <!-- add for reuters evaluation -->
+        <!-- https://mvnrepository.com/artifact/com.neovisionaries/nv-websocket-client -->
+        <dependency>
+            <groupId>com.neovisionaries</groupId>
+            <artifactId>nv-websocket-client</artifactId>
+            <version>2.5</version>
+        </dependency>
+    
+        <!-- add for reuters evaluation -->
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180130</version>
+        </dependency>
+    
+        <!-- add for reuters evaluation -->
+        <!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+    </dependencies>
+    
+
+</project>
