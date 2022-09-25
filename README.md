@@ -10,7 +10,12 @@ The scripts need to be run in the _marketData_ directory. The way to run the scr
 
 $ script_name ./location_of_marketData_directory
 
+<br>
+
 $ feedhandler_marketdata_analysis.sh ./
+
+<br>
+
 $ feedengine_marketdata_analysis.sh ./
 
 Both of FE and FH, the marketData directory need to contain the data.csv file. But the content 
